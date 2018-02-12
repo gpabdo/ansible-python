@@ -1,0 +1,7 @@
+---
+# tasks file for pip
+
+- name: Install Python pip and dev tools
+  apt: name={{ item }} state=present
+  with_items: 
+    - python-pip 
